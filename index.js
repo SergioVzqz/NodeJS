@@ -20,10 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.get("/", (req,res,next) =>{
-    res.status(200);
-    res.send("Hola mundo");
-});
+app.get("/", index);
 
 app.use("/user", user)
 
